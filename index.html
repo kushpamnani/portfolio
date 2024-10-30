@@ -1,0 +1,1294 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Kush Pamnani</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="Kush Pamnani - Software Engineer specializing in Full Stack Development and AI" />
+
+	<!-- Inter Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<!-- AOS (Animate on Scroll) CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+	<!-- Particles.js -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+	<style>
+		/* Reset and General styling */
+		/* Hero Section Highlights */
+		.highlight-boxes {
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			/* Spacing between highlight boxes */
+			margin-top: 1rem;
+			/* Add some space above the boxes */
+		}
+
+		.highlight-box {
+			background: rgba(255, 255, 255, 0.1);
+			/* Light background for contrast */
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			/* Slightly visible border */
+			border-radius: 8px;
+			padding: 1rem;
+			text-align: center;
+			transition: all 0.3s ease;
+			/* Smooth transition for hover effects */
+		}
+
+		.highlight-box:hover {
+			background: rgba(255, 255, 255, 0.2);
+			/* Change background color on hover */
+			transform: translateY(-4px);
+			/* Slightly lift the box on hover */
+		}
+
+		.highlight-box i {
+			font-size: 2rem;
+			/* Larger icon size */
+			color: #ffffff;
+			/* Icon color */
+			margin-bottom: 0.5rem;
+			/* Spacing below the icon */
+		}
+
+
+
+		body {
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+			background-color: #0A1120;
+			color: #ffffff;
+			line-height: 1.5;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		/* Typography */
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+			font-weight: 700;
+			letter-spacing: -0.025em;
+		}
+
+		/* Hero Section */
+
+
+		/* Navbar Styles */
+		.navbar {
+			background: rgba(10, 17, 32, 0.9);
+			padding: 1rem 0;
+			transition: all 0.3s ease;
+		}
+
+		.navbar-brand {
+			font-weight: 600;
+			color: #ffffff !important;
+		}
+
+		.nav-link {
+			color: #94A3B8 !important;
+			font-weight: 500;
+			transition: all 0.2s ease;
+			margin: 0 1rem;
+		}
+
+		.nav-link:hover {
+			color: #ffffff !important;
+			transform: translateY(-2px);
+		}
+
+		/* Section Titles */
+		.section-title {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #ffffff;
+			margin-bottom: 2rem;
+			letter-spacing: -0.025em;
+			text-align: center;
+		}
+
+		/* Skills Section */
+		#skills {
+			padding: 6rem 2rem;
+			background: #0A1120;
+		}
+
+		.skills-container h2.section-title {
+			font-family: 'Montserrat', sans-serif;
+			/* Example for heading */
+			font-size: 1.75rem;
+			/* Adjust size as needed */
+			font-weight: 700;
+			/* Bold */
+			color: #dfdddd;
+			/* Soft color that complements the background */
+			margin-bottom: 2rem;
+			/* Spacing below the title */
+			text-align: center;
+			/* Centering the title */
+		}
+
+
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 1.5rem;
+			margin-top: 2rem;
+		}
+
+		.skill-box {
+			background: rgba(15, 23, 42, 0.6);
+			border: 1px solid rgba(148, 163, 184, 0.1);
+			border-radius: 12px;
+			padding: 1.5rem;
+			transition: all 0.3s ease;
+		}
+
+		.skill-box:hover {
+			transform: translateY(-4px);
+			background: rgba(15, 23, 42, 0.8);
+			border-color: rgba(148, 163, 184, 0.2);
+		}
+
+		.skill-category {
+			color: #ffffff;
+			font-size: 1.25rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+			letter-spacing: -0.025em;
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+		}
+
+		.skill-category i {
+			color: #94A3B8;
+			font-size: 1.25rem;
+		}
+
+		.skills-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.75rem;
+		}
+
+		.skill-tag {
+			background: rgba(148, 163, 184, 0.1);
+			color: #94A3B8;
+			padding: 0.5rem 1rem;
+			border-radius: 6px;
+			font-size: 0.875rem;
+			font-weight: 500;
+			transition: all 0.2s ease;
+		}
+
+		.skill-tag:hover {
+			background: rgba(148, 163, 184, 0.2);
+			color: #ffffff;
+			transform: translateY(-2px);
+		}
+
+		/* Contact Section */
+		#contact {
+			padding: 6rem 2rem;
+			background: #0F172A;
+		}
+
+		.contact-form {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		.form-control {
+			background: rgba(148, 163, 184, 0.1);
+			border: 1px solid rgba(148, 163, 184, 0.2);
+			border-radius: 6px;
+			padding: 1rem;
+			color: #ffffff;
+			font-size: 1rem;
+			transition: all 0.2s ease;
+		}
+
+		.form-control:focus {
+			background: rgba(148, 163, 184, 0.15);
+			border-color: #94A3B8;
+			outline: none;
+			box-shadow: none;
+		}
+
+		.btn-primary {
+			background: #ffffff;
+			color: #0A1120;
+			border: none;
+			padding: 1rem 2rem;
+			font-weight: 600;
+			border-radius: 6px;
+			transition: all 0.2s ease;
+		}
+
+		.btn-primary:hover {
+			background: #94A3B8;
+			transform: translateY(-2px);
+		}
+
+		@media (max-width: 768px) {
+			.skills-grid {
+				grid-template-columns: 1fr;
+			}
+
+			#hero h1 {
+				font-size: 3rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<!-- Navbar -->
+	<!-- Navbar -->
+	<style>
+		/* Apply padding to the navbar-brand for spacing on all devices */
+		/* Apply padding to the navbar-brand for spacing on all devices */
+		.navbar-brand {
+			padding-left: 1rem;
+			/* Adjust the padding as needed */
+		}
+
+		/* Align navbar items to the right */
+		.navbar-collapse {
+			text-align: center;
+			/* Ensures right alignment on all screen sizes */
+		}
+
+		/* Remove the margin auto to allow flex items to align right */
+		.navbar-nav {
+			margin: 0;
+			/* No automatic margins */
+		}
+
+		/* Adjust padding for the navbar brand */
+		.navbar-brand {
+			padding-left: 0.5rem;
+			/* Adjust padding if needed */
+		}
+
+		/* Adjust the right padding for the items */
+		.nav-link {
+			padding-right: 1rem;
+			/* Add some right padding for spacing */
+		}
+	</style>
+
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Kush Pamnani</a>
+
+				<!-- Navbar Toggler Button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Collapsible Navbar Content -->
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#experience">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</body>
+
+
+
+
+	<!-- Hero Section -->
+	<!-- Hero Section -->
+	<!-- Hero Section -->
+	<!-- Hero Section -->
+	<section id="hero">
+		<div id="particles-js"></div>
+		<div class="content" data-aos="fade-down">
+			<h1>Kush Pamnani</h1>
+			<p class="title">Software Engineer | Full Stack Developer | AI Engineer</p>
+
+			<!-- About Content -->
+			<div class="about-content">
+				<p class="description">
+					I am a dedicated software engineer and a current student at Iowa State University,
+					pursuing a degree in Computer Science with a focus on Data Science.
+					I have a passion for creating robust web applications and innovative AI solutions.
+				</p>
+
+				<!-- Key Highlights -->
+				<div class="highlight-boxes">
+					<div class="highlight-box">
+						<i class="fas fa-code"></i>
+						<span>Full Stack Development</span>
+					</div>
+					<div class="highlight-box">
+						<i class="fas fa-brain"></i>
+						<span>AI & Machine Learning</span>
+					</div>
+					<div class="highlight-box">
+						<i class="fas fa-laptop-code"></i>
+						<span>User-Centric Software Design</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Social Icons -->
+		<!-- <div class="social-icons">
+			<a href="https://linkedin.com/in/kush-pamnani/" target="_blank" aria-label="LinkedIn">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a href="https://github.com/kushpamnani" target="_blank" aria-label="GitHub">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="mailto:kushpamnanii@gmail.com" target="_blank" aria-label="Email">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</div> -->
+		</div>
+	</section>
+
+
+	<style>
+		/* Additional styles for the about content */
+		.about-content {
+			margin: 2rem auto;
+			max-width: 800px;
+			opacity: 0;
+			transform: translateY(20px);
+			animation: fadeInUp 1s ease forwards 0.3s;
+		}
+
+		.highlight-boxes {
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+			margin: 2rem 0;
+			flex-wrap: wrap;
+		}
+
+		.highlight-box {
+			background: rgba(15, 23, 42, 0.6);
+			border: 1px solid rgba(148, 163, 184, 0.1);
+			border-radius: 8px;
+			padding: 1rem 1.5rem;
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			transition: all 0.3s ease;
+		}
+
+		.highlight-box:hover {
+			transform: translateY(-4px);
+			background: rgba(15, 23, 42, 0.8);
+			border-color: rgba(148, 163, 184, 0.2);
+		}
+
+		.highlight-box i {
+			color: #94A3B8;
+			font-size: 1.25rem;
+		}
+
+		.highlight-box span {
+			color: #ffffff;
+			font-weight: 500;
+			font-size: 0.875rem;
+		}
+
+		/* Update existing hero styles to accommodate new content */
+		/* Hero Section Styling */
+		#hero {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			text-align: center;
+			padding-top: 4rem;
+			background-color: #0A1120;
+		}
+
+		#hero .content {
+			position: relative;
+			z-index: 2;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+
+		.about-content {
+			margin-top: 1rem;
+			/* Adjust this to increase/decrease spacing */
+			max-width: 800px;
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.highlight-boxes {
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+			margin-top: 2rem;
+			flex-wrap: wrap;
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+			.highlight-boxes {
+				flex-direction: column;
+				align-items: stretch;
+			}
+
+			.highlight-box {
+				width: 100%;
+				justify-content: center;
+			}
+
+			.about-content {
+				padding: 0 1rem;
+			}
+		}
+
+		/* Fade-in animation for entire page */
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		/* Apply the animation to the body */
+		body {
+			animation: fadeIn 1.5s ease-in-out;
+			/* Duration and easing of the animation */
+			opacity: 1;
+		}
+	</style>
+
+	<!-- skills  -->
+	<!-- Skills Section -->
+	<section id="skills">
+		<div class="skills-container" data-aos="fade-up">
+			<h2 class="section-title">Technical Skills</h2>
+			<div class="skills-grid">
+				<!-- Frontend Skills -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-code"></i>
+						Frontend
+					</div>
+					<div class="skills-list">
+						<span class="skill-tag">React.js</span>
+						<span class="skill-tag">Angular</span>
+						<span class="skill-tag">Ionic</span>
+						<span class="skill-tag">Next.js</span>
+						<span class="skill-tag">Material UI</span>
+						<span class="skill-tag">Bootstrap</span>
+					</div>
+				</div>
+
+				<!-- Backend Skills -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-server"></i>
+						Backend
+					</div>
+					<div class="skills-list">
+						<span class="skill-tag">Node.js</span>
+						<span class="skill-tag">Spring Boot</span>
+						<span class="skill-tag">Express.js</span>
+						<span class="skill-tag">Java</span>
+						<span class="skill-tag">C#</span>
+						<span class="skill-tag">Firebase</span>
+					</div>
+				</div>
+
+				<!-- Database Skills -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-database"></i>
+						Databases
+					</div>
+					<div class="skills-list">
+						<span class="skill-tag">MongoDB</span>
+						<span class="skill-tag">MySQL</span>
+						<span class="skill-tag">MS SQL Server</span>
+						<span class="skill-tag">PostgreSQL</span>
+					</div>
+				</div>
+
+				<!-- Tools & Technologies -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-tools"></i>
+						Tools & Technologies
+					</div>
+					<div class="skills-list">
+						<span class="skill-tag">Git</span>
+						<span class="skill-tag">CI/CD</span>
+						<span class="skill-tag">REST APIs</span>
+						<span class="skill-tag">Websockets</span>
+						<span class="skill-tag">Postman</span>
+						<span class="skill-tag">Maven</span>
+					</div>
+				</div>
+
+				<!-- Machine Learning -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-brain"></i>
+						Machine Learning
+					</div>
+					<div class="skills-list">
+						<span class="skill-tag">Scikit-learn</span>
+						<span class="skill-tag">TensorFlow</span>
+						<span class="skill-tag">Neural Networks</span>
+						<span class="skill-tag">Deep Learning</span>
+					</div>
+				</div>
+
+				<!-- Methodologies -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-tasks"></i>
+						Methodologies
+					</div>
+					<div class="skills-list">
+						<span class="skill-tag">Agile</span>
+						<span class="skill-tag">Scrum</span>
+						<span class="skill-tag">Sprint Planning</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		/* Skills Section Styling */
+		/* Skills Section Styling */
+#skills {
+    padding: 4rem 2rem;
+    background-color: #0A1120;
+}
+
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid; /* Changed to grid for better control */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.skill-box {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure full height */
+}
+
+.skill-box:hover {
+    transform: translateY(-4px);
+    background: rgba(15, 23, 42, 0.8);
+    border-color: rgba(148, 163, 184, 0.2);
+}
+
+.skill-category {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.skill-category i {
+    color: #94A3B8;
+    font-size: 1.25rem;
+}
+.skill-tag {
+    background: #14344d;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    /* Add these properties */
+    border: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.skill-tag:hover {
+    opacity: 1;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex: 1;
+    align-items: flex-start;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+	</style>
+
+
+	<!-- Experience Section -->
+	<!-- Experience Section -->
+	<section id="experience" style="background: #0A1120; padding: 6rem 2rem;">
+		<div class="skills-container" data-aos="fade-up">
+			<h2 class="section-title">Work Experience</h2>
+			<div class="skills-grid">
+
+				<!-- Experience 1 -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-briefcase"></i> Research Assistant
+					</div>
+					<p class="company-name"><strong>Iowa State University </strong></p>
+					<div class="experience-details">
+						<p><strong>Duration:</strong> Sep 2024 - Present</p>
+						<p><strong>Responsibilities:</strong></p>
+						<ul>
+							<li><i class="fas fa-code"></i> Developed a fuzzy matching algorithm utilizing NLP
+								techniques and cosine similarity with TF-IDF vectorization.
+							</li>
+							<li><i class="fas fa-database"></i> Leveraged parallel computing to optimize large-scale
+								data processing, reducing execution time by more than 50%</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Experience 2 -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-briefcase"></i> Software Engineering Intern
+					</div>
+					<p class="company-name"><strong>Copeland</strong></p>
+					<div class="experience-details">
+						<p><strong>Duration:</strong> May 2024 - Aug 2024</p>
+						<p><strong>Responsibilities:</strong></p>
+						<ul>
+							<li><i class="fas fa-code-branch"></i> Developed a troubleshooting algorithm for
+								15+ electronic modules in refrigeration products.</li>
+							<li><i class="fas fa-users-cog"></i> Participated in Agile meetings and sprint planning
+								sessions with multiple software engineers.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Experience 3 -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-briefcase"></i> Information Technology Co-Op
+					</div>
+					<p class="company-name"><strong>Emerson</strong></p>
+					<div class="experience-details">
+						<p><strong>Duration:</strong> Aug 2023 - Dec 2023</p>
+						<p><strong>Responsibilities:</strong></p>
+						<ul>
+							<li><i class="fas fa-check-circle"></i> Deployed a client dashboard, empowering over 1K
+								customers with real-time data, leveraging Python and Ignition to enhance functionality
+								and user experience.</li>
+							<li><i class="fas fa-database"></i> Migrated and tested over 450 PLC data points from MS SQL
+								Server to Ignition Perspective.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Experience 4 (New Experience) -->
+				<div class="skill-box">
+					<div class="skill-category">
+						<i class="fas fa-briefcase"></i> Data Research Analyst Intern
+					</div>
+					<p class="company-name"><strong>Kingland Systems</strong></p>
+					<div class="experience-details">
+						<p><strong>Duration:</strong> Oct 2022 - Jun 2023</p>
+						<p><strong>Responsibilities:</strong></p>
+						<ul>
+							<li><i class="fas fa-tools"></i> Conducted thorough research and executed precise data entry
+								for corporations and investment vehicles.</li>
+							<li><i class="fas fa-share-alt"></i> Elevated data quality by engaging in consistent data
+								clean-up initiatives, enhancing the integrity of both new and existing company data.
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<style>
+		/* Experience Section Styling */
+		#experience {
+			background: #0A1120;
+			padding: 6rem 2rem;
+		}
+
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2rem;
+		}
+
+		.company-name {
+			color: #FFFFFF;
+			/* Change to desired color */
+			font-size: 1.2rem;
+			/* Adjust font size as needed */
+			margin: 0.5rem 0;
+			/* Spacing around company name */
+		}
+
+		.experience-details p {
+			color: #94A3B8;
+			font-size: 0.875rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.experience-details ul {
+			list-style: none;
+			/* Change to none for custom icons */
+			padding: 0;
+			margin-left: 1.5rem;
+			color: #94A3B8;
+			font-size: 0.875rem;
+		}
+
+		.experience-details ul li {
+			margin-bottom: 0.5rem;
+			display: flex;
+			/* Use flex to align icon and text */
+			align-items: center;
+			/* Center items vertically */
+		}
+
+		.experience-details ul li i {
+			color: #ffffff;
+			/* Change icon color */
+			margin-right: 0.5rem;
+			/* Space between icon and text */
+		}
+
+		.skill-box {
+			background: rgba(15, 23, 42, 0.6);
+			border: 1px solid rgba(148, 163, 184, 0.1);
+			border-radius: 12px;
+			padding: 1.5rem;
+			transition: all 0.3s ease;
+			position: relative;
+		}
+
+		.skill-box:hover {
+			transform: translateY(-4px);
+			background: rgba(15, 23, 42, 0.8);
+			border-color: rgba(148, 163, 184, 0.2);
+		}
+
+		.skill-category {
+			color: #ffffff;
+			font-size: 1.25rem;
+			font-weight: 600;
+			margin-bottom: 1rem;
+			letter-spacing: -0.025em;
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+		}
+
+		.skill-category i {
+			color: #94A3B8;
+			font-size: 1.25rem;
+		}
+	</style>
+
+	<!-- Experience Section -->
+	<!-- Experience Section -->
+
+
+
+
+	<!-- project section -->
+	<!-- Projects Section -->
+	<section id="projects" style="background: #0A1120; padding: 6rem 2rem;">
+		<div class="skills-container" data-aos="fade-up">
+			<h2 class="section-title">Featured Projects</h2>
+			<div class="skills-grid">
+
+				<!-- Project 1 -->
+				<div class="skill-box">
+					<div class="project-header">
+						<div class="project-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</div>
+						<h3>CatalogueCraft</h3>
+					</div>
+					<p>A full-stack e-commerce application with real-time inventory management and payment processing.
+						Features include user authentication, product management, and analytics dashboard.</p>
+					<div class="tech-stack">
+						<span>MongoDB</span>
+						<span>Express</span>
+						<span>React</span>
+						<span>Node.js</span>
+					</div>
+					<div class="project-links">
+						<a href="https://github.com/kushpamnani/CatalogueCraft" class="github-link">
+							<i class="fab fa-github"></i> Source Code
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div class="skill-box">
+					<div class="project-header">
+						<div class="project-icon">
+							<i class="fas fa-gamepad"></i>
+						</div>
+						<h3>CyQuiz</h3>
+					</div>
+					<p>An Android application helping middle school students study for their quizzes through a Dungeon
+						Crawler Game utilizing real-time messaging features, team play, and leaderboard scores.
+					</p>
+					<div class="tech-stack">
+						<span>Java</span>
+						<span>Websockets</span>
+						<span>MySQL</span>
+						<span>Postman</span>
+					</div>
+					<div class="project-links">
+						<a href="https://github.com/kushpamnani/CyQuiz" class="github-link">
+							<i class="fab fa-github"></i> Source Code
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="skill-box">
+					<div class="project-header">
+						<div class="project-icon">
+							<i class="fas fa-search"></i>
+						</div>
+						<h3>Career Nest</h3>
+					</div>
+					<p>A Full Stack application streamlining the job search process, offering students an intuitive
+						platform to explore, filter, and apply for jobs tailored to their preferences.</p>
+					<div class="tech-stack">
+						<span>MongoDB</span>
+						<span>Express</span>
+						<span>React</span>
+						<span>Node.js</span>
+					</div>
+					<div class="project-links">
+						<a href="https://github.com/kushpamnani/CareerNest" class="github-link">
+							<i class="fab fa-github"></i> Source Code
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 4 -->
+				<div class="skill-box">
+					<div class="project-header">
+						<div class="project-icon">
+							<i class="fas fa-store"></i>
+						</div>
+						<h3>Pantry Management</h3>
+					</div>
+					<p>A modern application for tracking pantry inventory, including consequent prices for the items.
+					</p>
+					<div class="tech-stack">
+						<span>Firebase</span>
+						<span>Material UI</span>
+						<span>JavaScript</span>
+					</div>
+					<div class="project-links">
+						<a href="https://github.com/kushpamnani/pantry_management" class="github-link">
+							<i class="fab fa-github"></i> Source Code
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<style>
+		/* Projects Section Styling */
+		/* Projects Section Styling */
+
+
+		/* Projects Section Styling */
+		#projects {
+			background: #0A1120;
+			padding: 6rem 2rem;
+		}
+
+		.skill-box {
+			display: flex;
+			flex-direction: column;
+			/* Ensure elements stack vertically */
+			justify-content: space-between;
+			/* Pushes the project links to the bottom */
+			height: 100%;
+			/* Required for flex behavior */
+			padding: 1rem;
+			/* Optional: Add padding for better spacing */
+			background: #0A1120;
+			/* Default card background color */
+			border-radius: 8px;
+			/* Rounded corners for cards */
+			transition: background 0.3s ease;
+			/* Smooth transition for background color */
+		}
+
+
+		.project-header {
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		.project-icon {
+			background: #ffffff;
+			color: #0A1120;
+			border-radius: 50%;
+			padding: 1rem;
+			font-size: 1.5rem;
+		}
+
+		/* New Styles for Project Images */
+		.project img {
+			width: 80%;
+			/* Adjust as needed */
+			max-width: 200px;
+			/* Set a max width */
+			height: auto;
+			/* Maintain aspect ratio */
+		}
+
+		.tech-stack {
+			margin: 1rem 0;
+		}
+
+		.tech-stack span {
+			background: #14344d;
+			color: #ffffff;
+			padding: 0.25rem 0.5rem;
+			border-radius: 8px;
+			margin-right: 0.5rem;
+			font-size: 0.875rem;
+		}
+
+		.project-links {
+			margin-top: auto;
+			/* Push this section to the bottom of the card */
+			text-align: center;
+			/* Center the links */
+		}
+
+		.project-links {
+			margin-top: auto;
+			/* Push this section to the bottom of the card */
+			text-align: left;
+			/* Align the links to the left */
+		}
+
+		.project-links a:hover {
+			text-decoration: underline;
+		}
+
+		/* New Styles for Project Names */
+		.project-header h3 {
+			font-size: 1.25rem;
+			/* Adjust font size as needed */
+			margin-bottom: 0.5rem;
+			/* Adjust spacing if necessary */
+		}
+	</style>
+
+	<!-- Contact Section -->
+	<!-- Contact Section -->
+	<!-- Contact Section --><!-- Contact Section -->
+	<section id="contact" class="py-5">
+		<div class="container" data-aos="fade-up">
+			<div class="contact-box mx-auto p-5 rounded shadow-lg"
+				style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(148, 163, 184, 0.1);">
+				<h2 class="section-title text-center mb-4">Contact Me</h2>
+				<p class="text-center mb-4">I am open to collaboration on innovative projects and exploring new opportunities in software engineering. If you're interested in discussing ideas or working together, let’s connect!</p>
+				<form method="post" action="https://formspree.io/f/mldejdyn">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="name">Name</label>
+							<input type="text" class="form-control" id="name" name="name" required>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" name="email" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary btn-block mt-3">Send Message</button>
+				</form>
+			</div>
+		</div>
+
+		<style>
+			/* Contact Section Styles */
+			#contact {
+				background: #0A1120;
+				/* Match the project section background */
+				padding: 80px 0;
+			}
+
+			.contact-box {
+				max-width: 600px;
+				background: rgba(15, 23, 42, 0.6);
+				/* Semi-transparent background */
+				border-radius: 15px;
+				box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+				border: 1px solid rgba(148, 163, 184, 0.1);
+				color: white;
+			}
+
+			.section-title {
+				font-size: 2rem;
+				font-weight: 700;
+				color: white;
+				margin-bottom: 1rem;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+			}
+
+			.contact-box p {
+				color: rgba(255, 255, 255, 0.8);
+			}
+
+			.form-group label {
+				color: rgba(255, 255, 255, 0.9);
+				font-weight: 500;
+			}
+
+			.form-control {
+				background: rgba(255, 255, 255, 0.1);
+				color: white;
+				/* Ensure text color is white */
+				border: 1px solid rgba(255, 255, 255, 0.2);
+				padding: 10px;
+				border-radius: 8px;
+				transition: background 0.3s ease, color 0.3s ease;
+			}
+
+			/* This style will ensure that the placeholder text is lighter, while typed text remains white */
+			.form-control::placeholder {
+				color: rgba(255, 255, 255, 0.6);
+				/* Lighter placeholder text */
+			}
+
+			/* Optional: Adjust focus color */
+			.form-control:focus {
+				background: rgba(255, 255, 255, 0.15);
+				border-color: #1d457c;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				color: white;
+				/* Ensures focused text remains white */
+			}
+
+
+			.btn-primary {
+				background-color: #1d457c;
+				border: none;
+				padding: 10px 20px;
+				font-size: 1rem;
+				border-radius: 8px;
+				transition: background-color 0.3s ease;
+				color: white;
+				box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+			}
+
+			.btn-primary:hover {
+				background-color: #1d457c;
+			}
+
+			.btn-primary:focus {
+				outline: none;
+				box-shadow: 0 4px 15px rgba(108, 99, 255, 0.5);
+			}
+		</style>
+	</section>
+
+
+	</section>
+
+
+	<!-- Footer -->
+	<style>
+		.footer-bottom {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding: 1.5rem 0;
+			background-color: transparent;
+		}
+	
+		.footer-bottom p {
+			color: #ffffff;
+			margin: 0;
+			font-size: 0.9rem;
+			text-align: center;
+			width: 100%;
+			opacity: 0.8;
+		}
+	
+		.social-links {
+			display: flex;
+			gap: 1.5rem;
+			margin: 1rem 0;
+		}
+	
+		.social-links a {
+			color: #ffffff;
+			opacity: 0.8;
+			transition: opacity 0.3s ease, transform 0.3s ease;
+		}
+	
+		.social-links a:hover {
+			opacity: 1;
+			transform: translateY(-2px);
+		}
+	
+		.social-icon {
+			width: 24px;
+			height: 24px;
+		}
+	</style>
+	
+	<!-- Footer HTML -->
+	<footer>
+		<div class="footer-bottom">
+			<div class="social-links">
+				<a href="https://github.com/kushpamnani" target="_blank" rel="noopener noreferrer" title="GitHub">
+					<svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+					</svg>
+				</a>
+				<a href="https://linkedin.com/in/kush-pamnani/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+					<svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+					</svg>
+				</a>
+				<a href="mailto:kushpamnanii@gmail.com" title="Email">
+					<svg class="social-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+						<path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+					</svg>
+				</a>
+			</div>
+			<p>&copy; 2024 Kush Pamnani. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap JS and Dependencies -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- AOS (Animate on Scroll) JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+	<!-- Particles.js Script Initialization -->
+	<script>
+		particlesJS("particles-js", {
+			particles: {
+				number: { value: window.innerWidth < 768 ? 40 : 80, density: { enable: true, value_area: 800 } },
+				color: { value: "#ffffff" },
+				shape: { type: "circle" },
+				opacity: { value: 0.5 },
+				size: { value: 5, random: true },
+				line_linked: { enable: true, color: "#ffffff", opacity: 0.4, width: 1 },
+				move: { enable: true, speed: 8 }
+			},
+			interactivity: { events: { onhover: { enable: true, mode: "repulse" } } },
+			retina_detect: true
+		});
+
+		AOS.init({
+			duration: 2000,
+			once: true,
+			easing: 'ease-out-back'
+		});
+
+
+	</script>
+
+
+</body>
+
+
+</html>
